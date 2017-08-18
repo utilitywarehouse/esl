@@ -41,7 +41,8 @@
   "files": [
     "lib/esl.js",
     "lib/parser.js",
-    "lib/response.js"
+    "lib/response.js",
+    "src/*"
   ],
   "dependencies": {
     "bluebird": "^3.5.0",
@@ -59,6 +60,7 @@
   },
   "scripts": {
     "prepublish": "coffee -c -o lib/ src/* && docco src/*",
+    "prepare": "coffee -c -o lib/ src/*",
     "pretest": "npm install",
     "test": "(cd test && ./setup.sh) && DEBUG='esl:test:*' mocha && (cd test && ./cleanup.sh; exit 0)",
     "clean": "rm -rf cov/ lib/ routes/ node_modules/ test/*.log"
