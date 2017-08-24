@@ -46,11 +46,11 @@
   ],
   "dependencies": {
     "bluebird": "^3.5.0",
-    "debug": "^2.6.6"
+    "debug": "^2.6.6",
+    "coffee-script": "^1.12.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "coffee-script": "^1.12.5",
     "docco": "^0.7.0",
     "memdown": "^1.2.4",
     "mocha": "^3.3.0",
